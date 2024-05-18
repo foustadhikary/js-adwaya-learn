@@ -16,4 +16,11 @@ let Islogged="yes"
 // number 2 to the power 53
 // bigint
 // string=> always use double quotes""
-// boolean true/false
+// boolean => true/false
+// null => stand alone value
+// undefined => var decleared and not asigned
+// symbol => unique char
+// object => 
+console.log(typeof undefined);
+console.log(typeof null);
+
