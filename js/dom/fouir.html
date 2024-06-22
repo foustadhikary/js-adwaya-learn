@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code| DOM</title>
+</head>
+<body style="background-color: #212121; color: rgb(233, 208, 17);">
+    <ul class="loanguage">
+        <li>
+            javascript
+        </li>
+    
+    </ul>
+</body>
+<script>
+    function addLanguage(name){
+        const li=document.createElement('li');
+        li.innerHTML=`${name}`
+        document.querySelector('.loanguage').appendChild(li);
+    }
+    addLanguage("cpp")
+    addLanguage("typescript")
+
+    function optLang(langName){
+       const li= document.createElement('li')
+       li.appendChild(document.createTextNode(langName));
+       document.querySelector('.loanguage').appendChild(li)
+    }
+    optLang('golang')
+        //edit
+        const langa=document.querySelector("li:nth-child(2)")
+        // langa.innerHTML="mojo";
+        const newLi= document.createElement('li');
+        newLi.textContent="mojo";
+        langa.replaceWith(newLi);
+
+        //edit
+
+    const fisrtLang=document.querySelector('li:first-child')
+    fisrtLang.outerHTML='<li>typescript</li>';
+    
+
+    // remove 
+    const lastLanguage=document.querySelector('li:last-child');
+    lastLanguage.remove();
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
